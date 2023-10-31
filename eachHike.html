@@ -27,14 +27,14 @@
    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
-   <script src="https://www.gstatic.com/firebasejs/ui/4.8.1/firebase-ui-auth.js"></script>
+   <script src="https://www.gstatic.com/firebasejs/ui/4.8.1/firebase-ui-auth.js"></script> 
    <link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/4.8.1/firebase-ui-auth.css" />
 
    <!-------------------------------------------->
    <!-- Other libraries and styles of your own -->
    <!-------------------------------------------->
    <!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> -->
-   <link rel="stylesheet" href="./styles/style.css">
+   <!-- <link rel="stylesheet" href="./styles/style.css"> -->
 
 </head>
 
@@ -48,10 +48,11 @@
 
    <!-- the body of your page goes here -->
    <!-- stuff -->
-   <div class="container text-center">
-      <img class="d-block mx-auto mb-4 responsive" src="./images/hike3.jpg" alt="">
-      <h1>Welcome to Ephraim's Hiking App</h1>
-      <a href="login.html" class="btn btn-info" role="button">Log in</a>
+
+   <div class="container">
+      <h1><span id="hikeName"> this hike</span></h1>
+      <img class="hike-img responsive" src="" />
+      <div id="details-go-here"></div>
    </div>
 
    <!-- our own footer goes here-->
@@ -60,14 +61,11 @@
    <!---------------------------------------------->
    <!-- Your own JavaScript functions go here    -->
    <!---------------------------------------------->
-   <script src="./scripts/firebaseAPI_TEAM99.js">
-   const db = firebase.firestore();</script>
+   <script src="./scripts/firebaseAPI_TEAM99.js"></script>
    <script src="./scripts/skeleton.js"></script>
-   <script src="./scripts/script.js"></script>
-   <script>
-      logout();       //make sure user is logged out
-   </script>
-   
+   <script src="scripts/eachHike.js"></script>
+   <!-- <script src="./scripts/script.js"></script> -->
+
 </body>
 
 </html>
