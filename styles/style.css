@@ -38,3 +38,8 @@
     margin: 2%;
     /* Add margin between cards */
 }
+
+img {
+    max-width: 40vw;
+    
+}
